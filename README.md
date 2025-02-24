@@ -17,14 +17,14 @@ This project demonstrates how to deploy both a Flask backend and an Express fron
 ## Folder Structure
 
 /terraform-project
-<br>│ ├── main.tf
-<br>│ ├── variables.tf
-<br>│ ├── outputs.tf
-<br>│ ├── user-data/
-<br>│ │   ├── flask.sh
-<br>│ │   └── express.sh
-<br>│ └── README.md
-<br>└── .gitignore
+<br>│ ├── main.tf                    # Main Terraform configuration
+<br>│ ├── variables.tf               # Terraform variables
+<br>│ ├── outputs.tf                 # Terraform outputs
+<br>│ ├── user-data/                 # Folder containing user data scripts
+<br>│ │   ├── flask.sh               # User data script for Flask EC2 instance
+<br>│ │   └── express.sh             # User data script for Express EC2 instance
+<br>│ └── README.md                  # Project readme
+<br>└── .gitignore                   # Git ignore file
 
 
 ---
