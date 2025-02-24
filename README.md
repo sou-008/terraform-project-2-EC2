@@ -3,8 +3,8 @@
 ## Project Overview
 This project demonstrates how to deploy both a Flask backend and an Express frontend on two separate EC2 instances using Terraform. The goal is to provision two EC2 instances, install the necessary dependencies, and run each application on its own instance:
 
-Flask backend on port 5000
-Express frontend on port 3000
+<br>Flask backend on port 5000
+<br>Express frontend on port 3000
 
 ## Prerequisites
 **Before starting, ensure you have the following:**
@@ -61,37 +61,37 @@ This script installs the necessary dependencies for the Express app (such as Nod
 ## Steps to Deploy
 
 ### Step 1: Set Up AWS CLI and Terraform
-1. Install the **AWS CLI** and configure it using `aws configure`.
-2. Install **Terraform** if you haven't already.
-3. Ensure your SSH key is available to use for the EC2 instance.
+- Install the **AWS CLI** and configure it using `aws configure`.
+- Install **Terraform** if you haven't already.
+- Ensure your SSH key is available to use for the EC2 instance.
 
 **Initialize Terraform**
 Run the following command to initialize the Terraform working directory:
-`terraform init`
+- `terraform init`
 
 **Review the Deployment Plan**
 Run the following command to review the Terraform deployment plan:
-`terraform plan`
+- `terraform plan`
 
 **Apply the Terraform Configuration**
 Run the following command to apply the Terraform configuration and provision the EC2 instances:
-`terraform apply`
+- `terraform apply`
 Type yes when prompted to confirm the deployment.
 
 **Access the Application**
 Once the deployment is complete, Terraform will output the public IP addresses of the EC2 instances. Use these IPs to access your applications:
-
-Flask Application: http://<Flask-Instance-Public-IP>:5000
-Express Application: http://<Express-Instance-Public-IP>:3000
+- Flask Application: http://<Flask-Instance-Public-IP>:5000
+- Express Application: http://<Express-Instance-Public-IP>:3000
 
 **Troubleshooting**
-Ensure that your EC2 instance's security group allows inbound traffic on ports 5000 and 3000.
-If you face issues with dependencies, check the application logs or verify if the required packages are installed.
-Ensure your security groups are properly configured for both EC2 instances.
+- Ensure that your EC2 instance's security group allows inbound traffic on ports 5000 and 3000.
+- If you face issues with dependencies, check the application logs or verify if the required packages are installed.
+- Ensure your security groups are properly configured for both EC2 instances.
 
 **Clean Up**
 To remove the resources created by Terraform:
-`terraform destroy`
+- `terraform destroy`
+
 This will tear down the EC2 instances and other associated resources.
 
 **Conclusion**
